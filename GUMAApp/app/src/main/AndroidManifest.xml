@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GUMAApp">
-        <activity android:name=".Bisection"></activity>
+        <activity android:name=".schedule"></activity>
+        <activity android:name=".calender2" />
+        <activity android:name=".Calender" />
+        <activity android:name=".Bisection" />
         <activity android:name=".Epsilon" />
         <activity android:name=".Median" />
         <activity android:name=".Pearson" />
