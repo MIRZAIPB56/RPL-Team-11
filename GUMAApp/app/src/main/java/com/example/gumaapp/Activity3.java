@@ -46,7 +46,7 @@ public class Activity3 extends AppCompatActivity {
         imageButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Activity3.this,schedule.class);
+                Intent intent = new Intent(Activity3.this,Calender.class);
                 startActivity(intent);
                 finish();
             }
@@ -55,7 +55,7 @@ public class Activity3 extends AppCompatActivity {
         imageButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Activity3.this,Activity3.class);
+                Intent intent = new Intent(Activity3.this,SecondActivity.class);
                 startActivity(intent);
                 finish();
             }

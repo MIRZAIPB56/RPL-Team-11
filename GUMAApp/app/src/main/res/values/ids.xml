@@ -6,4 +6,5 @@
     <item name="btn_signin" type="id" />
     <item name="texInputLayout2" type="id" />
     <item name="texInputLayout" type="id" />
+    <item name="container" type="id" />
 </resources>
