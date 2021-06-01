@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Bisection extends AppCompatActivity {
-    private ImageButton imageButton37;
+    private ImageButton imageButton41;
     ConstraintLayout constraintLayout;
 
 
@@ -20,8 +20,8 @@ public class Bisection extends AppCompatActivity {
         setContentView(R.layout.activity_bisection);
         constraintLayout= findViewById(R.id.container);
 
-        imageButton37= (ImageButton) findViewById(R.id.imageButton37);
-        imageButton37.setOnClickListener(new View.OnClickListener() {
+        imageButton41= (ImageButton) findViewById(R.id.imageButton41);
+        imageButton41.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Bisection.this, Activity3.class);

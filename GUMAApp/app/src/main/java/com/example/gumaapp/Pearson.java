@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class Pearson extends AppCompatActivity {
-    private ImageButton imageButton26;
+    private ImageButton imageButton41;
     ConstraintLayout constraintLayout;
 
     @Override
@@ -18,8 +18,8 @@ public class Pearson extends AppCompatActivity {
         setContentView(R.layout.activity_pearson);
         constraintLayout= findViewById(R.id.container);
 
-        imageButton26= (ImageButton) findViewById(R.id.imageButton26);
-        imageButton26.setOnClickListener(new View.OnClickListener() {
+        imageButton41= (ImageButton) findViewById(R.id.imageButton41);
+        imageButton41.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Pearson.this, Activity3.class);

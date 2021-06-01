@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class Epsilon extends AppCompatActivity {
-    private ImageButton imageButton33;
+    private ImageButton imageButton41;
     ConstraintLayout constraintLayout;
 
     @Override
@@ -18,8 +18,8 @@ public class Epsilon extends AppCompatActivity {
         setContentView(R.layout.activity_epsilon);
         constraintLayout= findViewById(R.id.container);
 
-        imageButton33= (ImageButton) findViewById(R.id.imageButton33);
-        imageButton33.setOnClickListener(new View.OnClickListener() {
+        imageButton41= (ImageButton) findViewById(R.id.imageButton41);
+        imageButton41.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Epsilon.this, Activity3.class);

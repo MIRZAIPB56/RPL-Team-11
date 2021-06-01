@@ -8,180 +8,132 @@
     tools:context=".Median">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar14"
+        android:id="@+id/toolbar6"
         android:layout_width="481dp"
         android:layout_height="78dp"
         android:background="#8ED8C7"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         tools:layout_editor_absoluteX="-35dp"
-        tools:layout_editor_absoluteY="-2dp" />
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
-        android:id="@+id/textView37"
-        android:layout_width="253dp"
-        android:layout_height="70dp"
+        android:id="@+id/textView13"
+        android:layout_width="234dp"
+        android:layout_height="60dp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="597dp"
+        android:layout_marginEnd="80dp"
         android:fontFamily="@font/roboto_bold"
         android:text="MEDIA DAN BRANDING"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar6"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toEndOf="@+id/imageButton41"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.214" />
 
     <ImageButton
-        android:id="@+id/imageButton29"
-        android:layout_width="63dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="332dp"
+        android:id="@+id/imageButton41"
+        android:layout_width="58dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="16dp"
         android:background="#8ED8C7"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar6"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/icon_back" />
 
     <TextView
-        android:id="@+id/textView38"
-        android:layout_width="0dp"
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
         android:fontFamily="@font/roboto_bold"
         android:text="PROFILE"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6"
+        app:layout_constraintVertical_bias="0.36" />
 
     <TextView
-        android:id="@+id/textView39"
-        android:layout_width="332dp"
-        android:layout_height="90dp"
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="74dp"
+        android:layout_marginBottom="216dp"
         android:text="Departemen yang berperan mempublikasikan semua kegiatan Gumatika dan memperkenalkan Gumatika baik di luar  atau di dalam IPB."
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar14" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imageView3"
         android:layout_width="107dp"
         android:layout_height="113dp"
-        android:layout_marginTop="202dp"
-        android:layout_marginEnd="276dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar14"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintVertical_bias="0.314"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/textView40"
-        android:layout_width="212dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="202dp"
+        android:id="@+id/textView16"
+        android:layout_width="189dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Kepala Departemen         M.Al Giffari Syah Matematika 55"
+        android:text="Ketua Departemen \nM.Al Giffari Syah \nMatematika 55"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.723"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar14" />
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
-        android:id="@+id/textView41"
-        android:layout_width="0dp"
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
-        android:layout_marginEnd="188dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="24dp"
         android:fontFamily="@font/roboto_bold"
         android:text="Program Kerja"
         android:textAlignment="viewStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView18"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView36"
-        android:layout_width="181dp"
-        android:layout_height="163dp"
-        android:layout_marginTop="371dp"
+        android:id="@+id/textView18"
+        android:layout_width="230dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="88dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Gumatalk Pomath Mading Dynamath Medsos"
+        android:text="Gumatalk \nPomath \nMading \nDynamath \nMedsos \nSespos"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar14" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar15"
-        android:layout_width="481dp"
-        android:layout_height="78dp"
-        android:background="#8ED8C7"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="-25dp"
-        tools:layout_editor_absoluteY="654dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="605dp"
-        android:layout_marginEnd="336dp"
-        android:layout_marginBottom="20dp"
-        android:background="#8ED8C7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
-        app:layout_constraintStart_toStartOf="@+id/toolbar2"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/home_button" />
-
-    <ImageButton
-        android:id="@+id/imageButton31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="605dp"
-        android:layout_marginBottom="20dp"
-        android:background="#8ED8C7"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/schedule_button" />
-
-    <ImageButton
-        android:id="@+id/imageButton32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="600dp"
-        android:layout_marginBottom="16dp"
-        android:background="#8ED8C7"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.892"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.454"
-        app:srcCompat="@drawable/file_button" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

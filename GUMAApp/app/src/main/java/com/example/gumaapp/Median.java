@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class Median extends AppCompatActivity {
-    private ImageButton imageButton29;
+    private ImageButton imageButton41;
     ConstraintLayout constraintLayout;
 
     @Override
@@ -18,8 +18,8 @@ public class Median extends AppCompatActivity {
         setContentView(R.layout.activity_median);
         constraintLayout= findViewById(R.id.container);
 
-        imageButton29= (ImageButton) findViewById(R.id.imageButton29);
-        imageButton29.setOnClickListener(new View.OnClickListener() {
+        imageButton41= (ImageButton) findViewById(R.id.imageButton41);
+        imageButton41.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Median.this, Activity3.class);

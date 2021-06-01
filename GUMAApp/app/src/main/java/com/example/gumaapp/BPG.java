@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class BPG extends AppCompatActivity {
-    private ImageButton imageButton14;
+    private ImageButton imageButton41;
     ConstraintLayout constraintLayout;
 
     @Override
@@ -18,8 +18,8 @@ public class BPG extends AppCompatActivity {
         setContentView(R.layout.activity_b_p_g);
         constraintLayout= findViewById(R.id.container);
 
-        imageButton14= (ImageButton) findViewById(R.id.imageButton14);
-        imageButton14.setOnClickListener(new View.OnClickListener() {
+        imageButton41= (ImageButton) findViewById(R.id.imageButton41);
+        imageButton41.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BPG.this, Activity3.class);

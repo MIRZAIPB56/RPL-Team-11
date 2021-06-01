@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class Mantissa extends AppCompatActivity {
-    private ImageButton imageButton22;
+    private ImageButton imageButton41;
     ConstraintLayout constraintLayout;
 
     @Override
@@ -18,8 +18,8 @@ public class Mantissa extends AppCompatActivity {
         setContentView(R.layout.activity_mantissa);
         constraintLayout= findViewById(R.id.container);
 
-        imageButton22= (ImageButton) findViewById(R.id.imageButton22);
-        imageButton22.setOnClickListener(new View.OnClickListener() {
+        imageButton41= (ImageButton) findViewById(R.id.imageButton41);
+        imageButton41.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Mantissa.this, Activity3.class);
