@@ -10,10 +10,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
-    private Button btn_signin;
+    private Button btn_signin, btn_signup;
+
     ConstraintLayout constraintLayout;
 
     @Override
@@ -21,13 +23,24 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         constraintLayout=findViewById(R.id.container);
+
         btn_signin = (Button) findViewById(R.id.btn_signin);
-        btn_signin.setOnClickListener(new View.OnClickListener() {
+        btn_signin.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View v){
                     Intent intent = new Intent(SecondActivity.this,Activity3.class);
                     startActivity(intent);
                     finish();
+            }
+        });
+        btn_signup = (Button) findViewById(R.id.btn_signup);
+        btn_signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SecondActivity.this,signup.class);
+                startActivity(intent);
+                finish();
             }
         });
 
@@ -36,5 +49,7 @@ public class SecondActivity extends AppCompatActivity {
         }
 
 
+        }
 
-    }
+
+
