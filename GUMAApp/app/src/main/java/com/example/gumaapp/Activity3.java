@@ -28,7 +28,7 @@ public class Activity3 extends AppCompatActivity {
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Activity3.this,Activity3.class);
+                Intent intent = new Intent(Activity3.this,gumashop.class);
                 startActivity(intent);
                 finish();
             }
