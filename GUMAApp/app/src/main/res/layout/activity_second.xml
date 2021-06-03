@@ -59,7 +59,8 @@
             android:drawableEnd="@drawable/ic_baseline_account_circle_24"
             android:textColor="@color/black"
             android:fontFamily="@font/cabin_medium"
-            android:hint="Email">
+            android:hint="Email"
+            android:inputType="textEmailAddress">
 
         </com.google.android.material.textfield.TextInputEditText>
 
@@ -83,6 +84,7 @@
             android:layout_height="wrap_content"
             android:background="#8ED8C7"
             android:hint="Password"
+            android:inputType="textPassword"
             android:fontFamily="@font/cabin_medium"
             android:textColor="@color/black"
             android:drawableEnd="@drawable/ic_baseline_lock_24">
