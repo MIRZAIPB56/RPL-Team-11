@@ -118,4 +118,4 @@ Aplikasi Gumatika Apps merupakan aplikasi yang berbasis android  yang dapat diop
 ## Hasil Implementasi
 * **Screenshot sistem** </br>
 * **Link Deploy**</br>
-Link Deploy dapat diakses pada link berikut ---> (https://sites.google.com/d/1cy9hqiyMnca506V3_3DBiZbbaoefJw8j/p/17rQn5TkfGAEmiOnhpBs4LU4aCOJDYizd/edit)
+Link Deploy dapat diakses pada link berikut ---> (ipb.link/gumamobile)
