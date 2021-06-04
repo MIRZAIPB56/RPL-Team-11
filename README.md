@@ -79,41 +79,35 @@ Aplikasi Gumatika Apps merupakan aplikasi yang berbasis android  yang dapat diop
 * Activity diagram</br>
 <p align="center">
   <a href="">
-    <img src="https://github.com/MIRZAIPB56/RPL-Team-11/blob/main/media/Use%20Case%20Diagram.png" alt="Guma Archive" width=736 height=401>
+    <img src="https://user-images.githubusercontent.com/78219073/120760493-6058ab00-c53e-11eb-8405-5b17521cd141.png" alt="Guma Archive" >
   </a>
 </p> </br>
 * Class diagram</br>
 <p align="center">
   <a href="">
-    <img src="https://github.com/MIRZAIPB56/RPL-Team-11/blob/main/media/Use%20Case%20Diagram.png" alt="Guma Archive" width=736 height=401>
+    <img src="https://user-images.githubusercontent.com/78219073/120760508-62bb0500-c53e-11eb-9b77-210922e2b0ec.png" alt="Guma Archive" >
   </a>
 </p> </br>
 * Entity Relationship Diagram</br>
 <p align="center">
   <a href="">
-    <img src="https://github.com/MIRZAIPB56/RPL-Team-11/blob/main/media/Use%20Case%20Diagram.png" alt="Guma Archive" width=736 height=401>
+    <img src="https://user-images.githubusercontent.com/78219073/120760485-5df65100-c53e-11eb-8b3a-37da78f6b1b4.png" alt="Guma Archive">
   </a>
 </p> </br>
 * Arsitektur sistem</br>
 <p align="center">
   <a href="">
-    <img src="https://github.com/MIRZAIPB56/RPL-Team-11/blob/main/media/Use%20Case%20Diagram.png" alt="Guma Archive" width=736 height=401>
+    <img src="https://user-images.githubusercontent.com/78219073/120760504-62226e80-c53e-11eb-997f-022fa56230d3.png" alt="Guma Archive" >
   </a>
 </p> </br>
 * Fungsi utama yang dikembangkan</br>
 <p align="center">
   <a href="">
-    <img src="https://github.com/MIRZAIPB56/RPL-Team-11/blob/main/media/Use%20Case%20Diagram.png" alt="Guma Archive" width=736 height=401>
-  </a>
-</p> </br>
-* Fungsi CRUD</br>
-<p align="center">
-  <a href="">
-    <img src="https://github.com/MIRZAIPB56/RPL-Team-11/blob/main/media/Use%20Case%20Diagram.png" alt="Guma Archive" width=736 height=401>
+    <img src="https://user-images.githubusercontent.com/78219073/120760509-62bb0500-c53e-11eb-9d3e-378ac39c27e9.png" alt="Guma Archive" >
   </a>
 </p> </br>
 
-## Fungsi CRUD
+* Fungsi CRUD
 1. CREATE : Membuat sebuah software yang digunakan oleh anggota Gumatika, selain itu juga membuat calender untuk reminder kegiatan dan rapat yang akan dilaksanakan oleh anggota Gumatika.</br>
 2. READ   : Digunakan untuk membaca data akun pengguna aplikasi tersebut.</br>
 3. UPDATE : Digunakan untuk memelihara dan mengembangkan software yang digunakan apabila terjadi bug atau kesalahan dalam pengembangan.</br>
