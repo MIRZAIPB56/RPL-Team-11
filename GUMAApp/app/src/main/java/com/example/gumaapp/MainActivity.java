@@ -16,7 +16,7 @@ import com.github.ybq.android.spinkit.style.CubeGrid;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static int SPLASH_TIME_OUT = 5000;
+    private static final int SPLASH_TIME_OUT = 5000;
 
     //Hooks
     View first,second,third,fourth,fifth,sixth,seventh;
@@ -70,13 +70,10 @@ public class MainActivity extends AppCompatActivity {
 
         //splash screen
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(MainActivity.this,SecondActivity.class);
-                startActivity(intent);
-                finish();
-            }
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+            startActivity(intent);
+            finish();
         },SPLASH_TIME_OUT);
 
     }

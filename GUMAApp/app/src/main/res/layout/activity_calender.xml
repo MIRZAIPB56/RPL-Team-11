@@ -26,9 +26,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Weekly"
+        android:fontFamily="@font/cabin_bold"
+        android:text="Add Event"
         android:textColor="@color/black"
-        android:background="@android:color/transparent"
+        android:background="#8ED8C7"
         android:textStyle="bold"
         android:onClick="weeklyAction"
         android:textSize="20sp"/>
@@ -58,6 +59,7 @@
             android:layout_weight="2"
             android:layout_height="match_parent"
             android:text="Feb 2021"
+            android:fontFamily="@font/cabin_bold"
             android:background="@android:color/transparent"
             android:textSize="20sp"
             android:textAlignment="center"
@@ -87,6 +89,7 @@
             android:layout_weight="1"
             android:text="SUN"
             android:background="#8ED8C7"
+            android:fontFamily="@font/cabin_bold"
             android:textColor="@color/black"
             android:textAlignment="center"
             android:textSize="16sp"/>
@@ -98,6 +101,7 @@
             android:text="MON"
             android:background="#8ED8C7"
             android:textColor="@color/black"
+            android:fontFamily="@font/cabin_bold"
             android:textAlignment="center"
             android:textSize="16sp"/>
 
@@ -108,6 +112,7 @@
             android:text="TUE"
             android:background="#8ED8C7"
             android:textColor="@color/black"
+            android:fontFamily="@font/cabin_bold"
             android:textAlignment="center"
             android:textSize="16sp"/>
 
@@ -118,6 +123,7 @@
             android:text="WED"
             android:background="#8ED8C7"
             android:textColor="@color/black"
+            android:fontFamily="@font/cabin_bold"
             android:textAlignment="center"
             android:textSize="16sp"/>
 
@@ -128,6 +134,7 @@
             android:text="THU"
             android:background="#8ED8C7"
             android:textColor="@color/black"
+            android:fontFamily="@font/cabin_bold"
             android:textAlignment="center"
             android:textSize="16sp"/>
 
@@ -138,6 +145,7 @@
             android:text="FRI"
             android:background="#8ED8C7"
             android:textColor="@color/black"
+            android:fontFamily="@font/cabin_bold"
             android:textAlignment="center"
             android:textSize="16sp"/>
 
@@ -147,6 +155,7 @@
             android:layout_weight="1"
             android:text="SAT"
             android:background="#8ED8C7"
+            android:fontFamily="@font/cabin_bold"
             android:textColor="@color/black"
             android:textAlignment="center"
             android:textSize="16sp"/>
@@ -158,6 +167,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/calendarRecyclerView"
         android:layout_width="match_parent"
+        android:fontFamily="@font/cabin_bold"
         android:layout_height="match_parent"/>
 
 </LinearLayout>
