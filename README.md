@@ -113,6 +113,12 @@ Aplikasi Gumatika Apps merupakan aplikasi yang berbasis android  yang dapat diop
   </a>
 </p> </br>
 
+## Fungsi CRUD
+1. CREATE : Membuat sebuah software yang digunakan oleh anggota Gumatika, selain itu juga membuat calender untuk reminder kegiatan dan rapat yang akan dilaksanakan oleh anggota Gumatika.</br>
+2. READ   : Digunakan untuk membaca data akun pengguna aplikasi tersebut.</br>
+3. UPDATE : Digunakan untuk memelihara dan mengembangkan software yang digunakan apabila terjadi bug atau kesalahan dalam pengembangan.</br>
+4. DELETE : Untuk menghapus data yang telah lampau, untuk menghindari terjadi kelebihan data yang digunakan dalam database.</br>
+
 ## Hasil Implementasi
 * **Screenshot sistem** </br>
 * **Link Deploy**</br>
