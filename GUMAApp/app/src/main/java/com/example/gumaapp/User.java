@@ -1,13 +1,15 @@
 package com.example.gumaapp;
 
+import android.icu.text.UnicodeMatcher;
+
 public class User {
-    public String textInputEditText1, textInputEditText2, textInputEditText6;
+    public String nama, nim, email;
     public User(){
     }
 
-    public User(String textInputEditText1, String textInputEditText2, String textInputEditText6){
-        this.textInputEditText1= textInputEditText1;
-        this.textInputEditText2= textInputEditText2;
-        this.textInputEditText6= textInputEditText6;
+    public User(String nama, String nim, String email){
+        this.nama= nama;
+        this.nim= nim;
+        this.email= email;
     }
 }

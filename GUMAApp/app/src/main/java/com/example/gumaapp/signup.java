@@ -24,26 +24,28 @@ import com.google.firebase.database.FirebaseDatabase;
 import org.jetbrains.annotations.NotNull;
 
 public class signup extends AppCompatActivity implements View.OnClickListener {
-    private TextView btn_signup;
+    private Button btn_signup;
     private EditText editTextNama, editTextNIM, editTextEmail, editTextPassword;
     private ImageButton imageButton41;
     private FirebaseAuth mAuth;
+    ConstraintLayout constraintLayout;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
+        constraintLayout=findViewById(R.id.container);
 
         mAuth = FirebaseAuth.getInstance();
 
         btn_signup = (Button) findViewById(R.id.btn_signup);
         btn_signup.setOnClickListener(this);
 
-        editTextNama = (EditText) findViewById(R.id.textInputEditText1);
-        editTextNIM = (EditText) findViewById(R.id.textInputEditText2);
-        editTextEmail = (EditText) findViewById(R.id.textInputEditText6);
-        editTextPassword = (EditText) findViewById(R.id.textInputEditText);
+        editTextNama = (EditText) findViewById(R.id.nama);
+        editTextNIM = (EditText) findViewById(R.id.nim);
+        editTextEmail = (EditText) findViewById(R.id.email);
+        editTextPassword = (EditText) findViewById(R.id.password);
 
         imageButton41 = (ImageButton) findViewById(R.id.imageButton41);
         imageButton41.setOnClickListener(this);
@@ -64,48 +66,48 @@ public class signup extends AppCompatActivity implements View.OnClickListener {
     }
 
     private void btn_signup() {
-        String textInputEditText1 = editTextNama.getText().toString().trim();
-        String textInputEditText2 = editTextNIM.getText().toString().trim();
-        String textInputEditText6 = editTextEmail.getText().toString().trim();
-        String textInputEditText = editTextPassword.getText().toString().trim();
+        String nama = editTextNama.getText().toString().trim();
+        String nim = editTextNIM.getText().toString().trim();
+        String email = editTextEmail.getText().toString().trim();
+        String password = editTextPassword.getText().toString().trim();
 
-        if(textInputEditText1.isEmpty()){
+        if(nama.isEmpty()){
             editTextNama.setError("Silakan masukkan nama!");
             editTextNama.requestFocus();
             return;
         }
-        if(textInputEditText2.isEmpty()){
+        if(nim.isEmpty()){
             editTextNIM.setError("Silakan masukkan NIM!");
             editTextNIM.requestFocus();
             return;
         }
-        if(textInputEditText6.isEmpty()){
+        if(email.isEmpty()){
             editTextEmail.setError("Silakan masukkan email!");
             editTextEmail.requestFocus();
             return;
         }
-        if(!Patterns.EMAIL_ADDRESS.matcher(textInputEditText6).matches()){
+        if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             editTextEmail.setError("Email tidak valid!");
             editTextEmail.requestFocus();
             return;
         }
-        if(textInputEditText.isEmpty()){
+        if(password.isEmpty()){
             editTextPassword.setError("Silakan masukkan password!");
             editTextPassword.requestFocus();
             return;
         }
-        if(textInputEditText.length() < 6){
+        if(password.length() < 6){
             editTextPassword.setError("Password harus terdiri minimal 6 karakter!");
             editTextPassword.requestFocus();
             return;
         }
 
-        mAuth.createUserWithEmailAndPassword(textInputEditText6, textInputEditText)
+        mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            User user = new User(textInputEditText1,textInputEditText2,textInputEditText6);
+                            User user = new User(nama,nim,email);
                             FirebaseDatabase.getInstance().getReference("Users")
                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                     .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
