@@ -1,11 +1,13 @@
 package com.example.gumaapp;
 
 import android.graphics.Color;
+import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.time.LocalDate;
@@ -32,11 +34,12 @@ class CalendarAdapter extends RecyclerView.Adapter<CalendarViewHolder>
         if(days.size() > 15) //month view
             layoutParams.height = (int) (parent.getHeight() * 0.166666666);
         else // week view
-            layoutParams.height = (int) parent.getHeight();
+            layoutParams.height = parent.getHeight();
 
         return new CalendarViewHolder(view, onItemListener, days);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onBindViewHolder(@NonNull CalendarViewHolder holder, int position)
     {
@@ -47,7 +50,7 @@ class CalendarAdapter extends RecyclerView.Adapter<CalendarViewHolder>
         {
             holder.dayOfMonth.setText(String.valueOf(date.getDayOfMonth()));
             if(date.equals(CalendarUtils.selectedDate))
-                holder.parentView.setBackgroundColor(Color.LTGRAY);
+                holder.parentView.setBackgroundColor(Color.YELLOW);
         }
     }
 
