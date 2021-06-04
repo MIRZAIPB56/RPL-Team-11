@@ -1,73 +1,97 @@
 package com.example.gumaapp;
 
-import android.content.ContentValues;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CalendarView;
-import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
-import static java.nio.file.StandardOpenOption.CREATE;
-import static org.xmlpull.v1.XmlPullParser.TEXT;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-public class Calender extends AppCompatActivity {
+import java.time.LocalDate;
+import java.util.ArrayList;
 
-    private mySQLiteDBHandler dbHandler;
-    private EditText editText;
-    private CalendarView calendarView;
-    private String selectedDate;
-    private SQLiteDatabase sqLiteDatabase;
+import static com.example.gumaapp.CalendarUtils.daysInMonthArray;
+import static com.example.gumaapp.CalendarUtils.monthYearFromDate;
 
+
+public class Calender extends AppCompatActivity implements CalendarAdapter.OnItemListener
+{
+    private TextView monthYearText;
+    private RecyclerView calendarRecyclerView;
+    private ImageButton imageButton41;
+
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calender);
 
-        editText = findViewById(R.id.editText);
-        calendarView = findViewById(R.id.calendarView);
-
-        calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+        imageButton41 = (ImageButton) findViewById(R.id.imageButton41);
+        imageButton41.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
-                selectedDate = Integer.toString(year) + Integer.toString(month) + Integer.toString(dayOfMonth);
-                ReadDatabase(view);
+            public void onClick(View v) {
+                Intent intent = new Intent(Calender.this,Activity3.class);
+                startActivity(intent);
+                finish();
             }
         });
+        initWidgets();
+        CalendarUtils.selectedDate = LocalDate.now();
+        setMonthView();
+    }
 
-        try{
+    private void initWidgets()
+    {
+        calendarRecyclerView = findViewById(R.id.calendarRecyclerView);
+        monthYearText = findViewById(R.id.monthYearTV);
+    }
 
-            dbHandler = new mySQLiteDBHandler(this, "CalendarDatabase", null,1);
-            sqLiteDatabase = dbHandler.getWritableDatabase();
-            sqLiteDatabase.execSQL("CREATE TABLE EventCalendar(Date TEXT, Event TEXT)");
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    private void setMonthView()
+    {
+        monthYearText.setText(monthYearFromDate(CalendarUtils.selectedDate));
+        ArrayList<LocalDate> daysInMonth = daysInMonthArray(CalendarUtils.selectedDate);
 
-        }
-        catch (Exception e){
-            e.printStackTrace();
+        CalendarAdapter calendarAdapter = new CalendarAdapter(daysInMonth, this);
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 7);
+        calendarRecyclerView.setLayoutManager(layoutManager);
+        calendarRecyclerView.setAdapter(calendarAdapter);
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public void previousMonthAction(View view)
+    {
+        CalendarUtils.selectedDate = CalendarUtils.selectedDate.minusMonths(1);
+        setMonthView();
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public void nextMonthAction(View view)
+    {
+        CalendarUtils.selectedDate = CalendarUtils.selectedDate.plusMonths(1);
+        setMonthView();
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    @Override
+    public void onItemClick(int position, LocalDate date)
+    {
+        if(date != null)
+        {
+            CalendarUtils.selectedDate = date;
+            setMonthView();
         }
     }
 
-    public void InsertDatabase(View view){
-        ContentValues contentValues = new ContentValues();
-        contentValues.put("Date",selectedDate);
-        contentValues.put("Event", editText.getText().toString());
-        sqLiteDatabase.insert("EventCalendar", null, contentValues);
-
+    public void weeklyAction(View view)
+    {
+        startActivity(new Intent(this, WeekViewActivity.class));
     }
-
-    public void ReadDatabase(View view){
-        String query = "Select Event from EventCalendar where Date = " + selectedDate;
-        try{
-            Cursor cursor = sqLiteDatabase.rawQuery(query, null);
-            cursor.moveToFirst();
-            editText.setText(cursor.getString(0));
-        }
-        catch (Exception e){
-            e.printStackTrace();
-            editText.setText("");
-        }
-    }
-
 }

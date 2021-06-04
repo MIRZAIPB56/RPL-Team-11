@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.gumaapp">
+    package="com.example.gumaapp" >
 
     <application
         android:allowBackup="true"
@@ -8,11 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GUMAApp">
-        <activity android:name=".signup"></activity>
+        android:theme="@style/Theme.GUMAApp" >
+        <activity android:name=".signup" />
         <activity android:name=".gumashop" />
         <activity android:name=".Calender" />
-        <activity android:name=".calender2" />
         <activity android:name=".Bisection" />
         <activity android:name=".Epsilon" />
         <activity android:name=".Median" />
@@ -23,7 +22,9 @@
         <activity android:name=".BPH" />
         <activity android:name=".Activity3" />
         <activity android:name=".SecondActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".EventEditActivity"></activity>
+        <activity android:name=".WeekViewActivity" />
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
