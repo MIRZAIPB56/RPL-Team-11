@@ -46,7 +46,7 @@ Aplikasi Gumatika Apps merupakan aplikasi yang berbasis android  yang dapat diop
 ### User Story
   &nbsp;&nbsp;&nbsp;&nbsp; Pada user story dibahas menu atau fungsi apa yang bisa dieksekusi oleh _admin_ (developer) dan _user_ (pengguna) berikut _user story_ dari **Guma Mobile**<br/>
 1. Sebagai admin, agar mempermudah jalannya program kerja organisasi, saya dapat menambahkan jadwal kegiatan dan rapat.
-2. Sebagai pengguna, agar tidak terlewat sebuah kegiatan dan rapat, saya dapat melihat jadwal kegiatan dan rapat tersebut.4. 
+2. Sebagai pengguna, agar tidak terlewat sebuah kegiatan dan rapat, saya dapat melihat jadwal kegiatan dan rapat tersebut. 
 3. Sebagai pengguna, agar saya dapat menikmati merchandise dari Gumatika, saya dapat belanja di Gumashop.
 4. Sebagai pengguna yang telah logout, agar bisa mengkases aplikasi secara pribadi, saya dapat memasukan username dan password untuk login kembali.
 5. Sebagai admin, agar aplikasi terkesan menarik, saya dapat mengatur tata letak atau design aplikasi.
