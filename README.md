@@ -38,7 +38,7 @@ Kelompok 11
 ***
 
 ## Deskripsi Singkat
-Aplikasi Gumatika Apps merupakan aplikasi yang berbasis android  yang dapat dioperasikan pada version 4.0.x dan versi atasnya. Aplikasi ini memiliki fitur antara lain:
+Aplikasi Gumatika Apps merupakan aplikasi yang berbasis android  yang dapat dioperasikan pada version 6.0.x dan versi atasnya. Aplikasi ini memiliki fitur antara lain:
 * Homepage (Preface Gumatika and Departemen Profile)
 * Calendar Reminder
 * Gumashop
@@ -121,3 +121,108 @@ Aplikasi Gumatika Apps merupakan aplikasi yang berbasis android  yang dapat diop
 
 * **Link Deploy**</br>
 Link Deploy dapat diakses pada link berikut ---> (https://ipb.link/gumamobile)
+
+## Testing (Test Cases)
+Pada kasus aplikasi tersebut, memiliki beberapa skenario antara lain :
+1. Landing Page : Pengguna akan diarahkan ke landing page ketika menjalankan aplikasi kemudian pengguna akan menuju login page.</br>
+2. Login Page   : Pengguna diminta untuk mengisi email dan password , jika benar maka akan diarahkan ke main page , jika salah akan muncul pesan error , jika belom punya akun diminta untuk registrasi terlebih dahulu.</br>
+3. Register     : Pengguna diminta untuk mengisi data diri berupa nama, nim,email,password kemudian setiap kolom perintah diminta masukan format yang sesuai, jika berhasil data akan masuk ke database realtime aplikasi.</br>
+4. Home page    : Pengguna dapat melihat tampilan profile departmen, schedule dan guma shop.</br>
+5. Schedule     : Pengguna dapat melihat kalender dan menambah event pada hari yang yang sesuai.</br>
+6. Gumashop     : Pengguna dapat melihat katalog produk dari bisection.</br>
+7. Logout       : Pengguna dapat keluar dari home page dan menuju ke login page.
+
+## Tabel Testing
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Scenario Id</th>
+            <th>Test Scenario Description</th>
+            <th>Input</th>
+            <th>Output</th>
+            <th>Positif/Negative</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>TS_Landing Page_01</td>
+            <td>Jika validasi landing page berhasil maka diarahkan menuju login page</td>
+            <td>Berhasil(Info berhasil)</td>
+            <td>Berhasil(Menuju login page)</td>
+            <td>Positive</td>
+       </tr>
+       <tr>
+            <td>2</td>
+            <td>TS_Login Page_01</td>
+            <td>Jika validasi login berhasil maka diarahkan menuju home page</td>
+            <td>Berhasil(Info berhasil)</td>
+            <td>Berhasil(Menuju home page)</td>
+            <td>Positive</td>
+       </tr>
+       <tr>
+            <td>3</td>
+            <td>TS_Login Page_02</td>
+            <td>Jika validasi login gagal maka akan muncul pesan error</td>
+            <td>Gagal(Info gagal)</td>
+            <td>Gagal(Gagal menuju home page)</td>
+            <td>Negative</td>
+      </tr>
+      <tr>
+            <td>4</td>
+            <<td>TS_Register_01</td>
+            <td>Jika validasi register sesuai dengan format maka data akan tersimpan dalam database real-time</td>
+            <td>Berhasil(Info berhasil)</td>
+            <td>Berhasil(Muncul tulisan berhasil)</td>
+            <td>Positive</td>
+     </tr>
+     <tr>
+            <td>5</td>
+            <<td>TS_Register_02</td>
+            <td>Jika validasi register tidak sesuai dengan format maka data tidak akan tersimpan dalam database real-time</td>
+            <td>Gagal(Info gagal)</td>
+            <td>Gagal(Muncul pesan error format tidak sesuai)</td>
+            <td>Negative</td>
+    </tr>
+    <tr>
+            <td>6</td>
+            <<td>TS_Home Page_01</td>
+            <td>Jika berhasil masuk maka akan muncul tampilan profile Gumatika dan nama departemen</td>
+            <td>Item(Click)</td>
+            <td>Berhasil(Menuju masing - masing profile departemen)</td>
+            <td>Positive</td>
+   </tr>
+   <tr>
+            <td>7</td>
+            <<td>TS_Schedule_01</td>
+            <td>Jika berhasil masuk maka akan muncul tampilan add event dan calender</td>
+            <td>Item(Click)</td>
+            <td>Berhasil(Masuk menuju add event dan melihat calender)</td>
+            <td>Positive</td>
+  </tr>
+  <tr>
+            <td>8</td>
+            <<td>TS_Gumashop_01</td>
+            <td>Jika berhasil masuk akan akan muncul tampilan catalog produk</td>
+            <td>Item(Click)</td>
+            <td>Berhasil(Memperjelas produk)</td>
+            <td>Positive</td>
+  </tr>
+  <tr>
+            <td>9</td>
+            <<td>TS_Logout_01</td>
+            <td>Jika berhasil logout maka akan kembali ke tampilan login page</td>
+            <td>Logout(Click)</td>
+            <td>Berhasil(Kembali menuju login page)</td>
+            <td>Positive</td>
+  </tr>
+    </tbody>
+  
+</table>
+
+## Saran untuk Pengembangan Selanjutnya
+1. Lebih mempersiapkan jadwal dengan membuat timeline agar lebih terstruktur dan tidak asal - asalan saat proses pembuatan dan pengembangan.</br>
+2. Semoga bisa lebih interaktif dan rapih dalam layout tampilan dan dalam struktur code nya.</br>
+ 
+
